@@ -1,0 +1,70 @@
+*{
+  margin: 0;
+  top: 0;
+}
+.App{
+  padding: 20px;
+  padding-bottom: 0 !important;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  position: relative;
+  overflow: hidden;
+}
+.one{
+  width: 40%;
+  border-radius: 50px;
+  padding: 20px;
+  border: 1px solid aqua;
+  background-color:rgba(0, 255, 255, 0.097);
+}
+.App::before{
+  content: "";
+  width: 120%;
+  height: 2000px;
+  background-color: aqua;
+  position: absolute;
+  top: 0%;
+  /* right: 400%; */
+  right: 40%;
+  border-radius: 50%;
+  transform: translateY(-70%);
+  transition: all 0.5s ease;
+
+}
+/* .App:hover::before{
+  right: 40%;
+} */
+.ap{
+  padding: 20px;
+  padding-bottom: 0 !important;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+.two{
+  width: 40%;
+  border-radius: 50px;
+  padding: 20px;
+  border: 1px solid deepskyblue;
+  background-color:rgba(0, 191, 255, 0.105);
+}
+.ap::after{
+  content: "";
+  width: 120%;
+  height: 2000px;
+  /* background: linear-gradient(45deg,black,gray,white); */
+background: linear-gradient(45deg,deeppink,pink,white);
+  position: absolute;
+  top: 0%;
+  left: 400%;
+  border-radius: 50%;
+  transform: translateY(-70%);
+  transition: all 0.5s ease;
+
+}
+.ap:hover::after{
+  left: 40%;
+}
